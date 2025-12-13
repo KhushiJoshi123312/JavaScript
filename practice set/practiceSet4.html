@@ -1,0 +1,30 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="name-display"></p>
+    
+    <script>
+      //when you want to display yur name on page
+      const myName='khushi';
+      document.querySelector('#name-display').
+      innerText = myName;  //use innerText
+
+      //calculate cost of myntra bag and keep  it in a variable
+      const GSTpercentage = 18;  // gst should be constant
+      let cartValue= Math.round(((15599-(10/100 * 15599))
+      - 272 + (2499 - (41/100* 2499))-29 + 25 + 20)* (100 + GSTpercentage) / 100);
+      console.log(cartValue);
+
+      //eval method treat string as mathematic calculation
+      console.log(eval('1+2+2'));  //ans is 5 not 122
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket game</title>
+</head>
+
+<body>
+    <h1>Bat Ball Stump Game</h1>
+    <button onclick="console.log('you have chooose bat');
+//    this will generate random no between 0 and 3
+       let randomNumber = Math.random() * 3;
+       let computerChoice;
+       if (randomNumber > 0  &&  randomNumber<= 1){
+       computerChoice = 'Bat';
+    //    console.log('computer choice is bat');
+       }
+
+       else if (randomNumber > 1 && randomNumber <= 2){
+       computerChoice = 'Ball';
+    //    console.log('computer choice is ball');
+       }
+
+       else{
+       computerChoice = 'Stump';
+    //    console.log('computer choice is Stump');
+       }
+       console.log(`computer choice is ${computerChoice}`);
+        
+       let resultMsg;
+       if(computerChoice === 'Ball' ){
+        resultMsg = ('you won');
+        }
+        else if (computerChoice === 'Bat' ){
+        resultMsg = 'its tie';   
+        }
+        else{
+        resultMsg = 'you won';   
+        }
+        alert(`you have chooose bat.computer choice is
+         ${computerChoice} ans ${resultMsg} `)
+
+
+       
+
+
+
+
+
+
+
+    
+    
+    ">Bat</button>
+    <button onclick="
+    console.log()">Ball</button>
+    <button onclick="">stamp</button>
+
+
+</body>
+
+</html>
